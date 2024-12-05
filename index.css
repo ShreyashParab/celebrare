@@ -1,0 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+
+.carousel {
+    width: 360px;
+    height: 640px;
+}
+
+.carousel-inner {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-item {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-item img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.defaultText {
+    position: absolute;
+    top: 100px;
+    left: 60px;
+    padding: 5px 10px;
+    border: 1px dashed #ccc;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-weight: bolder;
+    cursor: move;
+    user-select: none;
+    z-index: 10;
+    resize: both;
+    overflow: auto;
+    min-height: 50px;
+    min-width: 50px;
+}
+
+.defaultText:focus {
+    outline: 2px solid #007bff; /* Highlight during editing */
+    cursor: text; /* Change cursor for editing */
+}
