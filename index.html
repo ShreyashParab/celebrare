@@ -26,7 +26,7 @@
                 </div>
                 <div class="carousel-item">
                     <img src="https://fastly.picsum.photos/id/1060/536/354.jpg?blur=2&hmac=0zJLs1ar00sBbW5Ahd_4zA6pgZqCVavwuHToO6VtcYY" alt="image 3">
-                    <div class="defaultText">
+                    <div class="defaultText" contenteditable="true">
                         Lorem ipsum dolor sit amet.
                     </div>
                 </div>
@@ -41,7 +41,35 @@
             </button>
         </div>
     </div>
-    <button id="addTextBtn" class="btn btn-primary">Add Text</button>
+    <div class="toolbar">
+      <span>
+        <button id="addTextBtn" class="btn btn-dark">Add Text</button>
+        <button id="boldBtn">Bold</button>
+        <button id="deleteBtn" class="btn btn-danger">Delete</button>
+      </span>
+      <span>
+        <select id="fontFamilySelect">
+            <option value="Arial">Arial</option>
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Verdana">Verdana</option>
+            <option value="Courier New">Courier New</option>
+            <option value="Georgia">Georgia</option>
+            <option value="Tahoma">Tahoma</option>
+            <option value="Trebuchet MS">Trebuchet MS</option>
+            <option value="Lucida Console">Lucida Console</option>
+            <option value="Comic Sans MS">Comic Sans MS</option>
+            <option value="Impact">Impact</option>
+            <option value="Roboto">Roboto</option>
+            <option value="Open Sans">Open Sans</option>
+            <option value="Lato">Lato</option>
+        </select>
+        <input type="color" id="fontColorInput" />
+        <input type="number" id="fontSizeInput" min="8" max="72" value="16" />
+        
+       </span>
+      
+    </div>
+    
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="index.js"></script>

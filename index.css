@@ -9,6 +9,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    gap: 3rem;
 }
 
 
@@ -58,4 +59,20 @@ body {
 .defaultText:focus {
     outline: 2px solid #007bff; /* Highlight during editing */
     cursor: text; /* Change cursor for editing */
+}
+
+.toolbar{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.toolbar #boldBtn{
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+.toolbar span{
+    display: flex;
+    gap: 0.5rem;
 }
