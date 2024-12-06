@@ -1,11 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Apply functionality to existing defaultText elements
   document.querySelectorAll('.defaultText').forEach((textBox) => {
     applyDragFunctionality(textBox);
     attachClickListener(textBox);
   });
 
-  // Handle Add Text button click
   document.getElementById("addTextBtn").addEventListener("click", function () {
     let activeSlide = document.querySelector('.carousel-item.active');
     if (activeSlide) {
@@ -18,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
       newTextBox.style.top = '100px';
       activeSlide.appendChild(newTextBox);
       applyDragFunctionality(newTextBox);
-      attachClickListener(newTextBox); // Attach click listener
+      attachClickListener(newTextBox); 
     }
   });
 
@@ -57,12 +55,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     element.addEventListener("keydown", (event) => {
       if (["ArrowLeft", "ArrowRight", "ArrowUp", "ArrowDown"].includes(event.key)) {
-        event.stopPropagation(); // Stop the event from reaching the carousel
+        event.stopPropagation(); 
       }
     });
   }
 
-  // Toolbar functionality
   const boldButton = document.getElementById("boldBtn");
   const fontFamilySelect = document.getElementById("fontFamilySelect");
   const fontColorInput = document.getElementById("fontColorInput");

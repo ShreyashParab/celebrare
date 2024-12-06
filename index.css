@@ -57,8 +57,8 @@ body {
 }
 
 .defaultText:focus {
-    outline: 2px solid #007bff; /* Highlight during editing */
-    cursor: text; /* Change cursor for editing */
+    outline: 2px solid #007bff;
+    cursor: text; 
 }
 
 .toolbar{
